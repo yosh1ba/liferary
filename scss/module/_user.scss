@@ -1,0 +1,9 @@
+.user-info-controll {
+    max-width: 600px;
+}
+
+form::after{
+    content: "";
+    display: block;
+    clear: both;
+}

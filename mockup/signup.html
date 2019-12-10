@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ユーザ登録 | Liferary あなたの「人生の一冊」を共有するサイト</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Sawarabi+Mincho|Vollkorn:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="mb-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">Liferary</a>
+                <div class="navbar-nav ml-auto">
+                    <a href="./login.html" class="nav-item nav-link">ログイン</a>
+                    <a href="./signup.html" class="nav-item nav-link">ユーザ登録</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="signup" class="m-auto user-info-controll bg-light p-5">
+            <h2 class="font-weight-bold text-center mb-5">ユーザー登録</h2>
+            <form action="">
+                <div class="form-group mb-4">
+                    <label for="input-name">ニックネーム</label>
+                    <input type="text" class="form-control" id="input-name">
+                    <small id="emailHelp" class="form-text">10文字以内で入力して下さい</small>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="input-email">メールアドレス</label>
+                    <input type="email" class="form-control" id="input-email">
+                    <small id="emailHelp" class="form-text">メールアドレスの形式で入力して下さい</small>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="input-password">パスワード</label>
+                    <input type="password" class="form-control" id="input-password">
+                    <small id="emailHelp" class="form-text">パスワードの形式で入力して下さい</small>
+                </div>
+                <div class="form-group mb-5">
+                    <label for="input-password-retype">パスワード（再入力）</label>
+                    <input type="password" class="form-control" id="input-password-retype">
+                    <small id="emailHelp" class="form-text">パスワードの形式で入力して下さい</small>
+                </div>
+                <button type="submit" class="btn btn-success rounded-0 px-4 py-2 ml-auto float-right">登録する</button>
+                
+            </form>
+        </section>
+    </div>
+    <footer class="footer py-1 bg-dark text-center">
+        <div class="container">
+            <span>&copy; 2019 yoshiba</span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

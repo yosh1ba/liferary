@@ -1,0 +1,10 @@
+/*お気に入りアイコン*/
+.icn-like{
+color: $color-text;
+}
+.icn-like:hover{
+cursor: pointer;
+}
+.icn-like.active{
+color: #fe8a8b;
+}

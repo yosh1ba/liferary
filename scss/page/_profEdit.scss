@@ -1,0 +1,32 @@
+// profEdit
+#icon-area{
+    position: relative;
+    height: 100%;
+}
+
+#drop-area{
+    width: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    background-color: $color-img;
+}
+
+#input-img{
+    opacity: 0;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.prev-img{
+    position: absolute;
+    width: 150px;
+    z-index: 5;
+    height: 150px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}

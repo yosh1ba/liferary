@@ -1,0 +1,20 @@
+// sidebar-right
+#sidebar-right{
+    background-color: #c5d4c8;
+    min-height: calc(100vh - 62px - 32px);
+    ul{
+        list-style: none;
+        padding-left: 0;
+        box-sizing: border-box;
+        li{
+            a{
+                text-decoration: none;
+                color: $color-text;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+
+        }
+    }
+}

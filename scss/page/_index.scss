@@ -1,0 +1,27 @@
+// pagination
+.page-item {
+    margin-right: .5rem;
+    &.active{
+        .page-link{
+            border: 2px solid $color-border;
+            background-color: $color-sub;
+        }
+    }
+}
+
+.page-link{
+    background-color: white;
+    color: $color-text;
+    border: 2px solid $color-border;
+    &:hover{
+        color: $color-text;
+    }
+}
+
+.bg-image {
+    background-image:url("../img/bg.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    min-height: calc(100vh - 62px - 32px);
+}

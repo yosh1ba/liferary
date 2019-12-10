@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>パスワード再発行 | Liferary あなたの「人生の一冊」を共有するサイト</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Sawarabi+Mincho|Vollkorn:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="mb-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">Liferary</a>
+                <div class="navbar-nav ml-auto">
+                    <a href="./login.html" class="nav-item nav-link">ログイン</a>
+                    <a href="./signup.html" class="nav-item nav-link">ユーザ登録</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="pass-reminder-send" class="m-auto user-info-controll bg-light p-5">
+            <h2 class="font-weight-bold text-center mb-5">パスワード再発行</h2>
+            <form action="">
+                <div class="form-group mb-4">
+                    <label for="input-text">認証キー</label>
+                    <input type="text" class="form-control" id="input-text">
+                    <small id="emailHelp" class="form-text">認証キーが一致しません</small>
+                </div>
+                <button type="submit" class="btn btn-success rounded-0 px-4 py-2 ml-auto float-right">再発行</button>
+                
+            </form>
+        </section>
+    </div>
+    <footer class="footer py-1 bg-dark text-center">
+        <div class="container">
+            <span>&copy; 2019 yoshiba</span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

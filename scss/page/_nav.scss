@@ -1,0 +1,19 @@
+// nav
+header{
+    background-color: $color-main;
+    
+}
+.navbar-brand{
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.navbar-nav{
+    a{
+        text-decoration: none;
+        color: #fff;
+        &:last-child{
+            margin-left: 30px;
+        }
+    }
+}

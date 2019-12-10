@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>書籍登録 | Liferary あなたの「人生の一冊」を共有するサイト</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Sawarabi+Mincho|Vollkorn:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">Liferary</a>
+                <div class="navbar-nav ml-auto">
+                    <a href="logout.html" class="nav-item nav-link">ログアウト</a>
+                    <a href="./mypage.html" class="nav-item nav-link">マイページ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">    
+            <section id="regist-book" class="col-9 mx-auto pl-4 bg-light">
+                <h2 class="font-weight-bold text-center my-5">書籍登録</h2>
+                <form action="">
+                    <div class="form-group mb-4">
+                        <label for="input-isbn">ISBNコード</label>
+                        <div class="row w-100 m-0">
+                            <input type="text" class="form-control w-50" id="input-isbn">
+                            <button type="submit" class="btn btn-success rounded-0 px-4 py-2 ml-4">書籍検索</button>
+                        </div>
+                        <small id="isbnHelp" class="form-text">一致する書籍がありません</small>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-3">
+                            <img src="./img/noimg.svg" alt="" class="align-middle" width="150">
+                        </div>                    
+                        <div class="col-9">
+                            <h5>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h5>
+                            <p class="mb-2">著者著者著者著者著者著者</p>
+                            <p class="mb-2">出版日</p>
+                            <p class="mb-2">出版社</p>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <span>この本を読んだ時期</span>
+                        <div class="dropdown mt-2">
+                            <button class="btn btn-light dropdown-toggle text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              選択して下さい
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">20代の頃</a>
+                              <a class="dropdown-item" href="#">30代の頃</a>
+                              <a class="dropdown-item" href="#">40代の頃</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="input-comment">この本はあなたにとってどんな本ですか？</label>
+                        <input type="text" class="form-control" id="input-comment" placeholder="例）無人島に持っていきたい一冊です">
+                        <span class="d-block text-right">0/30文字</span>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="input-comment">詳細</label>
+                        <textarea class="form-control" id="input-detailt" rows="20"></textarea>
+                        <span class="d-block text-right">0/500文字</span>
+                    </div>
+                    <div class="row justify-content-between px-3 mb-5">
+                        <button type="submit" class="btn btn-dark rounded-0 px-4 py-2">削除する</button>
+                        <button type="submit" class="btn btn-success rounded-0 px-4 py-2">登録する</button>
+                    </div>
+                </form>
+            </section>
+            <section id="sidebar-right" class="col-3 pt-5">
+                <ul>
+                    <li class="mb-3"><a href="">登録書籍情報の編集</a></li>
+                    <li class="mb-3"><a href="">プロフィールの編集</a></li>
+                    <li class="mb-3"><a href="">パスワードの変更</a></li>
+                    <li class="mb-3"><a href="">退会</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="container-fluid footer py-1 bg-dark text-center">
+        <span>&copy; 2019 yoshiba</span>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

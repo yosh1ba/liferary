@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>書籍情報 | Liferary あなたの「人生の一冊」を共有するサイト</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Sawarabi+Mincho|Vollkorn:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/095cff189b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="mb-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">Liferary</a>
+                <div class="navbar-nav ml-auto">
+                    <a href="./signup.html" class="nav-item nav-link">ユーザ登録</a>
+                    <a href="./mypage.html" class="nav-item nav-link">マイページ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="book-detail" class="bg-light pt-5 mb-3">
+            <h2 class="font-weight-bold text-center mb-5">書籍情報</h2>
+            <div class="row ml-auto mr-auto mb-5">
+                <div class="col-3">
+                    <img src="./img/noimg.svg" alt="" class="align-middle" width="225">
+                </div>                    
+                <div class="col-9">
+                    <h5>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h5>
+                    <p class="mb-2">著者著者著者著者著者著者</p>
+                    <p class="mb-2">出版日</p>
+                    <p class="mb-2">出版社</p>
+                </div>
+            </div>
+            <h3 class="font-weight-bold text-center mb-3">だれの一冊？</h3>
+            <div class="row ml-auto mr-auto mb-5">
+                <div class="col-3 text-center">
+                    <img src="./img/noicon.svg" alt="" class="align-middle d-block ml-auto mr-auto mb-3">
+                    <span>ユーザー名ユーザー名</span>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="col-9">
+                    <p class="font-weight-bold">読んだ時期：<br>
+                        <span class="font-weight-normal pl-2">
+                            20代の頃
+                        </span>
+                    </p>
+                    <p class="font-weight-bold">この本について：<br>
+                        <span class="font-weight-normal pl-2">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）親譲りの無鉄砲で小供
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <h3 class="font-weight-bold text-center mb-3">コメント</h3>
+            <div class="row ml-auto mr-auto mb-3">
+                <div class="col-10 text-right">
+                    <div class="balloon-comment">
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="balloon-icon h-100">
+                        <img src="./img/noicon.svg" alt="" class="align-middle d-block m-auto" width="80">
+                        <span class="small text-muted">ユーザー名ユーザー名</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-auto mr-auto mb-3">
+                <div class="col-10 text-right">
+                    <div class="balloon-comment">
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="balloon-icon h-100">
+                        <img src="./img/noicon.svg" alt="" class="align-middle d-block m-auto" width="80">
+                        <span class="small text-muted">ユーザー名ユーザー名</span>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="p-3">
+                <textarea class="form-control mb-3" id="input-comment" rows="2" placeholder="コメント入力"></textarea>
+                <button type="submit" class="btn btn-success rounded-0 px-4 py-2 mb-5 ml-auto float-right">送信</button>
+            </form>
+        </section>
+    </div>
+    <footer class="footer py-1 bg-dark text-center">
+        <div class="container">
+            <span>&copy; 2019 yoshiba</span>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
