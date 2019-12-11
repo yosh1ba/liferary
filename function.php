@@ -236,11 +236,11 @@ function isLogin(){
 function dbConnect(){
   // DBへの接続準備
   // ローカル用
-  $dsn = 'mysql:dbname=liferary;host=localhost;charset=utf8';
-  $user = 'root';
-  $password = 'root';
+  // $dsn = 'mysql:dbname=liferary;host=localhost;charset=utf8';
+  // $user = 'root';
+  // $password = 'root';
 
-  // require('dbConnect.php');
+  require('dbConnect.php');
 
   $options = array(
     // SQL実行失敗時にはエラーコードのみ設定
