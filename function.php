@@ -553,7 +553,7 @@ function getBookData($isbn){
   }else{
     // 書籍情報を格納
     $books = $data['items'][0]['volumeInfo'];
-    
+    $books['imageLinks']['thumbnail'] = str_ireplace('http://books.google.com','https://encrypted.google.com',$books['imageLinks']['thumbnail']);
   }
   // 書籍情報を返す
   return $books;
