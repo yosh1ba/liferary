@@ -553,6 +553,7 @@ function getBookData($isbn){
   }else{
     // 書籍情報を格納
     $books = $data['items'][0]['volumeInfo'];
+    
   }
   // 書籍情報を返す
   return $books;

@@ -79,8 +79,8 @@ if(!empty($_POST)){
 
 ////////////////////////////////////////
 Liferary
-URL  http://xxx.com/
-E-mail info@ligerary.com
+URL  https://liferary.yosh1ba.com/
+E-mail info@liferary.com
 ////////////////////////////////////////
 EOT;
                     sendMail($from, $to, $subject, $comment);
