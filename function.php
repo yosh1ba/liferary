@@ -476,11 +476,14 @@ function getPostList($currentMinNum = 1, $period, $span = 5, $sort){
     // ソート順
     if(!empty($sort)){
       switch($sort){
+        case 0:
+          $sql .= ' ORDER BY pos.created_on DESC';
+          break;
         case 1:
-          $sql .= ' ORDER BY pos.created_on ASC';
+          $sql .= ' ORDER BY pos.created_on DESC';
           break;
         case 2:
-          $sql .= ' ORDER BY pos.created_on DESC';
+          $sql .= ' ORDER BY pos.created_on ASC';
           break;
       }
     }    
