@@ -105,6 +105,13 @@ if(!empty($_POST)){
         if(!empty($bookData)){
             $dbFormData2 = $bookData;
 
+            // 書籍情報代入
+            $title = $dbFormData2['title'];
+            $author = array_shift($dbFormData2['authors']);
+            $publish_date = $dbFormData2['publishedDate'];
+            $picture = $dbFormData2['imageLinks']['thumbnail'];
+
+
         // 書籍情報が見つからない場合
         } else{
             $err_msg['isbn'] = MSG_BOOK;
