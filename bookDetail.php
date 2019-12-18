@@ -111,7 +111,14 @@ require('head.php');
             <h3 class="font-weight-bold text-center mb-4">だれの一冊？</h3>
             <div class="row mx-auto mb-5">
                 <div class="col-3 text-center">
-                    <img src="<?php echo $viewUserData['icon']; ?>" alt="" class="align-middle d-block ml-auto mr-auto mb-3 rounded-circle" width="150">
+                    <img src="
+                        <?php 
+                        if(isset($viewUserData['icon'])){
+                            echo $viewUserData['icon'];
+                        } else{
+                            echo './img/noicon.svg';
+                        }; ?>"
+                     alt="" class="align-middle d-block ml-auto mr-auto mb-3 rounded-circle" width="150">
                     <span><?php echo sanitize($viewUserData['name']); ?></span>
                     <i class="far fa-heart icn-like js-click-like <?php if(isLike($_SESSION['user_id'], $viewPostData['post_id'])){ echo 'active'; } ?>" area-hidden=”true” data-postid="<?php echo sanitize($viewPostData['post_id']); ?>"></i>
                 </div>
@@ -142,7 +149,7 @@ require('head.php');
                     <div class="balloon-icon h-100 text-center">
                         <img src="
                         <?php 
-                        if(!empty($data['icon'])){
+                        if(!isset($data['icon'])){
                             echo $data['icon'];
                         } else{
                             echo './img/noicon.svg';
