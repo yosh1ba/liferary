@@ -72,7 +72,7 @@ if($_POST){
             
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
-            $err_msg['common'] = MSG07;
+            $err_msg['common'] = MSG_CMN;
         }
     }
 }
@@ -149,7 +149,7 @@ require('head.php');
                     <div class="balloon-icon h-100 text-center">
                         <img src="
                         <?php 
-                        if(!isset($data['icon'])){
+                        if(!empty($data['icon'])){
                             echo $data['icon'];
                         } else{
                             echo './img/noicon.svg';
