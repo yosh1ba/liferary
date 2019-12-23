@@ -915,7 +915,7 @@ function pagination($currentPageNum, $totalPageNum, $totalData, $link='', $pageC
         echo '</a>';
     echo '</li>';
     
-    for($i=1; $i<=$maxPageNum; $i++){
+    for($i= $minPageNum; $i<=$maxPageNum; $i++){
       echo '<li class="page-item ';
       if($currentPageNum == $i){echo 'active';}
       echo '"><a class="page-link" href="?p='.$i.$link.'">'.$i.'</a></li>';
